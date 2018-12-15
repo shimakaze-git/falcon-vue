@@ -7,6 +7,14 @@ from bs4 import BeautifulSoup
 
 
 class FalconVueAdapter:
+    """This class is a callable taking the form for falcon sink.
+
+    Keyword Arguments:
+        src_path (str): vue.js dist directory path
+            vue.js dist directory path
+        api_url (str): falcon uri_template
+            falcon uri_template
+    """
 
     src_path = None
     api_url = None
