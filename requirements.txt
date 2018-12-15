@@ -1,0 +1,2 @@
+falcon==1.4.1
+beautifulsoup4==4.6.3
