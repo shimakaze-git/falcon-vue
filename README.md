@@ -1,14 +1,22 @@
-# Falcon Vue
+Falcon Vue
+====
 
 Falcon Vue is a plugin for the [Falcon Web Framework](https://github.com/falconry/falcon).
 
-### Install
+falcon-vue is a plug-in for distributing static files built by vue.js (vue-cli) on falcon.
+
+## Description
+
+falcon-vue is a plug-in for distributing static files built by vue.js (vue-cli) on falcon.
+To use this plugin, you need to install vue-cli and build it to generate a static file.
+
+## Install
 
 ```bash
 pip3 install falcon-vue
 ```
 
-## Falcon Vue
+## Usage
 
 ```python
 import os
@@ -30,3 +38,6 @@ if __name__ == '__main__':
     httpd.serve_forever()
 ```
 
+## Licence
+
+[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)

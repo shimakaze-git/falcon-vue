@@ -11,6 +11,24 @@ def register_vue_app(
     api_url="/dist",
     src_path=""
 ):
+    """""
+    register_vue_app
+
+    Parameters
+    ----------
+    app : object
+        falcon.API object
+    api_url : str
+        api url
+    src_path : str
+        api src path
+
+    Returns
+    -------
+    app : object
+        falcon.API object
+    """""
+
     if is_path_abs(src_path):
         src_full_path = src_path
     else:

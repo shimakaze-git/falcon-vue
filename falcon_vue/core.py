@@ -20,6 +20,14 @@ class FalconVueAdapter:
     api_url = None
 
     def __init__(self, src_path, api_url):
+        """
+        Parameters
+        ----------
+        src_path : str
+            vue.js dist directory path
+        api_url : str
+            falcon uri_template
+        """
         FalconVueAdapter.src_path = src_path
         FalconVueAdapter.api_url = api_url
 
