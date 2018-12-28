@@ -3,6 +3,8 @@ from setuptools import setup, find_packages
 VERSION = '0.1'
 REQUIRES = ['falcon>=1.4.0']
 
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='falcon_vue',
@@ -12,6 +14,7 @@ setup(
     author='shimakaze-git',
     author_email="shimakaze.soft@gmail.com",
     description="An unladen web framework for building APIs and app backends.",
+    long_description=long_description,
     license="MIT",
     keywords="falcon vue falcon-vue falcon_vue",
     url="",
