@@ -35,6 +35,12 @@ class FalconVueAdapter:
         req_path = req.path
         file_path = req_path.replace(self.api_url, "", 1)
 
+        """ add index.html """
+        if not file_path:
+            """ redirect process """
+            redirect_path = req_path + "/index.html"
+            raise falcon.HTTPMovedPermanently(redirect_path)
+
         filepath = self.src_path + file_path
         if self.api_url == "/":
             filepath = self.src_path + "/" + file_path
