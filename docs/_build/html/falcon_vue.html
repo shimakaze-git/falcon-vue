@@ -1,0 +1,202 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>falcon_vue package &#8212; falcon-vue 0.1.4 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="falcon-vue-package">
+<h1>falcon_vue package<a class="headerlink" href="#falcon-vue-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-falcon_vue.core">
+<span id="falcon-vue-core-module"></span><h2>falcon_vue.core module<a class="headerlink" href="#module-falcon_vue.core" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="falcon_vue.core.FalconVueAdapter">
+<em class="property">class </em><code class="descclassname">falcon_vue.core.</code><code class="descname">FalconVueAdapter</code><span class="sig-paren">(</span><em>src_path</em>, <em>api_url</em><span class="sig-paren">)</span><a class="headerlink" href="#falcon_vue.core.FalconVueAdapter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class is a callable taking the form for falcon sink.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>src_path</strong> (<em>str</em>) – vue.js dist directory path
+vue.js dist directory path</li>
+<li><strong>api_url</strong> (<em>str</em>) – falcon uri_template
+falcon uri_template</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="falcon_vue.core.FalconVueAdapter.api_url">
+<code class="descname">api_url</code><em class="property"> = None</em><a class="headerlink" href="#falcon_vue.core.FalconVueAdapter.api_url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="falcon_vue.core.FalconVueAdapter.replace_css_tag">
+<code class="descname">replace_css_tag</code><span class="sig-paren">(</span><em>soup</em><span class="sig-paren">)</span><a class="headerlink" href="#falcon_vue.core.FalconVueAdapter.replace_css_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="falcon_vue.core.FalconVueAdapter.replace_img_tag">
+<code class="descname">replace_img_tag</code><span class="sig-paren">(</span><em>soup</em><span class="sig-paren">)</span><a class="headerlink" href="#falcon_vue.core.FalconVueAdapter.replace_img_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="falcon_vue.core.FalconVueAdapter.replace_script_tag">
+<code class="descname">replace_script_tag</code><span class="sig-paren">(</span><em>soup</em><span class="sig-paren">)</span><a class="headerlink" href="#falcon_vue.core.FalconVueAdapter.replace_script_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="falcon_vue.core.FalconVueAdapter.replace_static_tag">
+<code class="descname">replace_static_tag</code><span class="sig-paren">(</span><em>html_text</em>, <em>test=2</em><span class="sig-paren">)</span><a class="headerlink" href="#falcon_vue.core.FalconVueAdapter.replace_static_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="falcon_vue.core.FalconVueAdapter.src_path">
+<code class="descname">src_path</code><em class="property"> = None</em><a class="headerlink" href="#falcon_vue.core.FalconVueAdapter.src_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-falcon_vue.router">
+<span id="falcon-vue-router-module"></span><h2>falcon_vue.router module<a class="headerlink" href="#module-falcon_vue.router" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="falcon_vue.router.register_vue_app">
+<code class="descclassname">falcon_vue.router.</code><code class="descname">register_vue_app</code><span class="sig-paren">(</span><em>app</em>, <em>api_url='/dist'</em>, <em>src_path=''</em><span class="sig-paren">)</span><a class="headerlink" href="#falcon_vue.router.register_vue_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>“”
+register_vue_app</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>app</strong> (<em>object</em>) – falcon.API object</li>
+<li><strong>api_url</strong> (<em>str</em>) – api url</li>
+<li><strong>src_path</strong> (<em>str</em>) – api src path</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>app</strong> – falcon.API object</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-falcon_vue.util">
+<span id="falcon-vue-util-module"></span><h2>falcon_vue.util module<a class="headerlink" href="#module-falcon_vue.util" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="falcon_vue.util.abs_dirname">
+<code class="descclassname">falcon_vue.util.</code><code class="descname">abs_dirname</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#falcon_vue.util.abs_dirname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get absolute path from file name</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="falcon_vue.util.is_path_abs">
+<code class="descclassname">falcon_vue.util.</code><code class="descname">is_path_abs</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#falcon_vue.util.is_path_abs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decision it is a relative path or an absolute path</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-falcon_vue">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-falcon_vue" title="Permalink to this headline">¶</a></h2>
+<p>Created on 2018/12/25
+&#64;author: shimakaze-git</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">falcon-vue</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, shimakaze-git.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/falcon_vue.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
